@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BroGYM - Best Gym in Ajmer</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/utils.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="bg">
+      <div class="container mx-auto">
+        <header>
+          <nav class="flex navbar justify-between">
+            <div class="logo font-bold flex item-center text-blue">
+              Bro Fitness
+            </div>
+            <ul class="flex item-center">
+              <li class="hideOnMobile"><a href="#">Home</a></li>
+              <li class="hideOnMobile"><a href="#">About</a></li>
+              <li class="hideOnMobile"><a href="#">Services</a></li>
+              <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+              <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#"><button class="btn">Join Now</button></a></li>
+            </ul>
+          </nav>
+          <hr />
+        </header>
+        <main class="min-h-screen">
+          <section class="section1">
+            <div class="flex">
+              <div class="top-left flex flex-col justify-center px-2">
+                <div class="text-center">
+                  <img class="dumbbell-img px-2 my-1" src="dumbbell.png" alt="" />
+                </div>
+                <h1 class="my-1 text-center">
+                  The best Fitness Gym in the town is here Now
+                </h1>
+                <p class="text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  quia culpa pariatur! Autem officia suscipit quaerat itaque quod
+                  delectus mollitia?
+                </p>
+                <!-- Display Countdown Timer -->
+                <p class="text-center">The Deal ends in <span id="demo"></span>
+                  <div class="buttons">
+                    <button class="btn">Join Now</button>
+                    <button class="btn">Contact us</button>
+                  </div>
+                </p>
+              </div>
+              <div class="top-right flex justify-center">
+                <img class="gym-img px-2 my-1" src="gym.png" alt="gym" />
+              </div>
+            </div>
+          </section>
+          <hr />
+          <section class="section2">
+            <h1 class="text-center my-2">Pricing</h1>
+            <p class="text-center my-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
+              inventore, doloribus dolor tenetur dolore laudantium perspiciatis
+              harum at nobis voluptate animi!
+            </p>
+            <div class="boxes wrap text-center justify-center flex flex-row">
+              <div class="box">
+                <h2>Basic</h2>
+                <ul>
+                  <li class="highlighted">₹300/mth</li>
+                  <li>No wifi</li>
+                  <li>Email support</li>
+                  <li>Help Center Access</li>
+                  <li><button class="btn">Sign up for Free</button></li>
+                </ul>
+              </div>
+              <div class="box">
+                <h2>Pro</h2>
+                <ul>
+                  <li class="highlighted">₹500/mth</li>
+                  <li>No wifi</li>
+                  <li>Email support</li>
+                  <li>Help Center Access</li>
+                  <li><button class="btn">Join Now</button></li>
+                </ul>
+              </div>
+              <div class="box">
+                <h2>Enterprise</h2>
+                <ul>
+                  <li class="highlighted">₹1500/mth</li>
+                  <li>Wifi</li>
+                  <li>Email support</li>
+                  <li>Help Center Access</li>
+                  <li>Personal Trainer</li>
+                  <li>free Access to all Equipments</li>
+                  <li><button class="btn">Contact Us</button></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <section class="section3">
+            <h2 class="text-center justify-center my-2">Compare plans</h2>
+
+            <div class="plan-table">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Free</th>
+                    <th>Pro</th>
+                    <th>Enterprise</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Public</th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Private</th>
+                    <td>-</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Permissions</th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Sharing</th>
+                    <td>-</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Unlimited members</th>
+                    <td>-</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Extra security</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">All Equipments</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <hr />
+        </main>
+        <footer class="text-center">
+          Copyrigth &copy; PriyanshuFitness.com | All Rights Reserved
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
